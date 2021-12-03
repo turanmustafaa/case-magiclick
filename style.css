@@ -1,0 +1,224 @@
+:root {
+    --dark: #2b3b48;
+    --blue-grey: #8093a5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+section.dash {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.dash .container {
+    width: 1440px;
+    padding: 31px 165px;
+}
+
+section.dash .container > h1 {
+    margin-bottom: 48px;
+    color: var(--dark);
+}
+
+section.dash .container .btns {
+   width: 75%;
+   display: flex;
+}
+
+section.dash .container .btns .btn {
+    padding: 15px;
+    border: 2px solid #4f6477;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+    width: 45%;
+    text-align: center;
+    color: var(--dark);
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+section.dash .container .btns .btn:hover {
+    background-color: var(--dark);
+    color: white;
+}
+
+section.dash .dash-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.dash .dash-content .currency-table {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.dash .dash-content .currency-table .item {
+    display: grid;
+    align-items: center;
+    padding-bottom: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #bac9d5;
+    margin-right: 65px;
+}
+
+section.dash .dash-content .currency-table .item:nth-child(5) , section.dash .dash-content .currency-table .item:nth-child(6){
+    border-bottom: none;
+}
+
+section.dash .dash-content .currency-table .item>div>*:nth-child(1) {
+    margin-bottom: 6px;
+}
+
+section.dash .dash-content .currency-table .item .head .head-title {
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+section.dash .dash-content .currency-table .item .head .head-desc {
+    font-size: 12px;
+    color: var(--dark);
+}
+
+section.dash .dash-content .currency-table .item .ask .ask-title,
+section.dash .dash-content .currency-table .item .bid .bid-title {
+    font-size: 12px;
+    color: var(--dark);
+}
+
+section.dash .dash-content .currency-table .item .ask .ask-desc,
+section.dash .dash-content .currency-table .item .bid .bid-desc {
+    font-size: 16px;
+    color: var(--dark);
+}
+
+section.dash .dash-content .exchange {
+    background: linear-gradient(154deg, var(--dark) 32%, var(--blue-grey) 115%);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 20px 0px;
+}
+
+section.dash .dash-content .exchange .exchange-head {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+
+section.dash .dash-content .exchange .inner {
+    margin-bottom: 19px;
+    width: 90%;
+    display: flex;
+}
+
+section.dash .dash-content .exchange .inner input {
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+}
+
+section.dash .dash-content .exchange .inner select {
+    height: 48px;
+    line-height: 48px;
+}
+
+section.dash .dash-content .exchange .change-img img {
+    margin-bottom: 19px;
+}
+
+section.dash .dash-content .exchange .outer {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+section.dash .dash-content .exchange .outer input{
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+}
+
+section.dash .dash-content .exchange .outer > div {
+    height: 47px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1250px) {
+    section.dash .container {
+        width: 100%;
+        padding: 15px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    section.dash .container {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    section.dash .container > h1 {
+        padding: 10px;
+        margin-bottom: 20px;
+    
+    }
+
+    section.dash .container .btns {
+        width: 95%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    section.dash .container .btns .btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    section.dash .dash-content {
+        flex-direction: column;
+    }
+
+    section.dash .dash-content .currency-table {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    section.dash .dash-content .currency-table .item {
+        margin-right: 0px;
+        padding-top: 10px;
+    }
+
+    section.dash .dash-content .exchange {
+        width: 95%;
+        margin: auto;
+    }
+
+    section.dash .dash-content .currency-table .item:nth-child(5) {
+        border-bottom: 1px solid #bac9d5;
+    }
+  }
